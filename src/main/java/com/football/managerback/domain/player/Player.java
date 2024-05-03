@@ -11,7 +11,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @Entity
-@Table(name = "player", schema = "manager")
+@Table(name = "player")
 public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

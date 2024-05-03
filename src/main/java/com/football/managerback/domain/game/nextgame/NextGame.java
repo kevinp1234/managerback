@@ -13,7 +13,7 @@ import java.time.LocalTime;
 @Getter
 @Setter
 @Entity
-@Table(name = "next_game", schema = "manager")
+@Table(name = "next_game")
 public class NextGame {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

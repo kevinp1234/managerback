@@ -18,8 +18,7 @@ public class ObservationController {
     @Operation(summary = "Finds all observations data for particular player.",
     description = "If no player selected -> for all players. Returns list of observations.")
     public List<ObservationInfo> getObservations(@RequestParam Integer userId, @RequestParam Integer playerId) {
-        List<ObservationInfo> observationInfos = observationService.getObservations(userId, playerId);
-        return observationInfos;
+        return observationService.getObservations(userId, playerId);
     }
 
     @GetMapping("/observation/{observationId}")

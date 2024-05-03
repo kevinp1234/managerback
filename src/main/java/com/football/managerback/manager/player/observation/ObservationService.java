@@ -33,9 +33,8 @@ public class ObservationService {
     public List<ObservationInfo> getObservations(Integer userId, Integer playerId) {
 
         List<PlayerObservation> playerObservations = playerObservationRepository.findObservationsBy(userId, playerId);
-        List<ObservationInfo> observationInfos = playerObservationMapper.toObservationInfos(playerObservations);
 
-        return observationInfos;
+        return playerObservationMapper.toObservationInfos(playerObservations);
     }
 
     public ObservationDetailedInfo getObservation(Integer playerObservationId) {

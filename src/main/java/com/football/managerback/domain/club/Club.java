@@ -13,7 +13,7 @@ import lombok.ToString;
 @Setter
 @Entity
 @ToString
-@Table(name = "club", schema = "manager")
+@Table(name = "club")
 public class Club {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
